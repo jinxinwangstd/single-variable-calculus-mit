@@ -1,6 +1,8 @@
-# Differentiation
+# Lecture 1: Rate of Change
 
-Definition 1: $f'(x_0)$, the derivative of $f$ at $x_0$, is the slope of the tangent line to $y=f(x)$ at $(x_0, f(x_0))$.
+Definition:
+
+$f'(x_0)$, the derivative of $f$ at $x_0$, is the slope of the tangent line to $y=f(x)$ at $(x_0, f(x_0))$.
 
 Analytically, we need to figure out the expression of the tangent line, i.e. $y - y_0 = m \times (x - x_0)$. We already know $x_0$ and $y_0$, so the rest thing is to figure out the slope $m$.
 
