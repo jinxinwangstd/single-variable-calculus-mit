@@ -40,3 +40,14 @@ Proof of $\lim_{\Delta x \to 0} \frac{1 - \cos \Delta x}{\Delta x} = 0$:
 We'll prove it from the geometric point of view. In geometry, we'll change the $\Delta x$ to $\Delta \theta$. In a unit circle, the $\cos \Delta \theta$ is the cast edge length, so the $1 - \cos \Delta \theta$ is the length of the remainder of the cast edge, and the $\Delta \theta$ is the arc length. Therefore, $\frac{1 - \cos \Delta \theta}{\Delta \theta}$ is the ratio of the length of the remainder of the cast edge to the arc length. When the $\Delta \theta$ becomes closer to 0 radians, the edge and the arc becomes more and more alike, so the remainder shrinks to smaller and smaller. The remainder becomes smaller much quicker than the arc, therefore $\lim_{\Delta \theta \to 0} \frac{1- \cos \Delta \theta}{\Delta \theta} = 0$.
 
 Geometric proof of $\frac{d}{d \theta}\sin \theta = \cos \theta$ for all $\theta$:
+
+In a unit circle centered at $O$, suppose a point $P$ is on the circle and its associated angle is $\theta$. Next, we added a small amount $\Delta \theta$ to the angle $\theta$, and let $Q$ be the point on the unit circle at angle $\theta + \Delta \theta$. Let $R$ be the point outside the unit circle where $PR$ parallels to the $Y$ axis and $QR$ parallels to the $X$ axis. Therefore, $\Delta y = \sin(\theta + \Delta \theta) - \sin \theta = PR$.
+
+When $\Delta \theta \to 0$, we can observe the following facts:
+
+1. The arc $PQ$ is near the line $PQ$, so the length of the line $PQ$ is near $\Delta \theta$.
+2. $\angle QPO = \angle PQO \approx 90^\circ$, so that $\angle RPQ = \theta$.
+
+Therefore, in the right triangle $PQR$, we can get the following conclusion:
+
+$\lim_{\Delta \theta \to 0} \frac{\Delta y}{\Delta \theta} = \frac{PR}{PQ} = \cos \angle RPQ = \cos \theta$.
