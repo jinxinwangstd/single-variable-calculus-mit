@@ -60,4 +60,44 @@ Hence, $\frac{dy}{dt} = \frac{dy}{dx} \cdot \frac{dx}{dt}$.
 
 Example 1: calculate the derivative of the function $y = \sin^{10}(t)$.
 
+We can express the function as $x = \sin(t)$, $y = x^{10}$.
+
+According to the chain rule,
+
+$\frac{dy}{dt}=\frac{dy}{dx} \cdot \frac{dx}{dt} = 10x^9 \cdot \cos(t) = 10\sin^9(t)\cos(t)$.
+
 Example 2: calculate the derivative of the function $y = \sin(10t)$.
+
+We can express the function as $x = 10t$, $y = \sin(x)$.
+
+According to the chain rule,
+
+$\frac{dy}{dt} = \frac{dy}{dx} \cdot \frac{dx}{dt} = \cos(x) \cdot 10 = 10\cos(10t)$.
+
+Higher Derivatives: derivatives over derivative functions.
+
+Example: $u(x)=\sin(x)$, $u'(x) = (u(x))' = \cos(x)$, $u''(x) = (u'(x))' = -\sin(x)$, $u'''(x) = (u''(x))' = -\cos(x)$, $u^4(x) = (u'''(x))' = \sin(x)$.
+
+Anther notation: $u'(x) = \frac{d}{dx} u(x)$. If we view $\frac{d}{dx}$ as an operator that is applied to $u(x)$ and use $D$ to represent it, then we have
+
+$u'(x) = \frac{d}{dx}u(x) = \frac{du}{dx} = Du$
+
+$u''(x)=\frac{d}{dx} \frac{d}{dx} u(x) = (\frac{d}{dx})^2 u(x) = \frac{d^2}{d x^2} u(x) = \frac{d^2 u}{d x^2} = D^2 u$
+
+$u'''(x) = \frac{d}{dx} \frac{d}{dx} \frac{d}{dx} u(x) = (\frac{d}{dx})^3 u(x) = \frac{d^3}{d x^3} u(x) = \frac{d^3 u}{d x^3} = D^3 u$
+
+Example 1: calculate $D^n x^n$.
+
+$D x^n = n x^{n-1}$
+
+$D^2 x^n = n(n-1)x^{n -2}$
+
+$D^3 x^n = n (n-1) (n-2) x^{n-3}$
+
+...
+
+$D^{n-1} x^n = n (n-1) (n-2) ... 3 \cdot 2 \cdot x$
+
+$D^n x^n = n (n-1) (n-2) ... 2 \cdot 1 \cdot x^0 = n (n-1) (n-2) ... 3 \cdot 2 \cdot 1 = n!$
+
+$D^{n+1} x^n = 0$
