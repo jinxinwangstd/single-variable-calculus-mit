@@ -111,3 +111,37 @@ Therefore, $M(a) = \ln a$.
 Method 2: logarithmic differentiation. To calculate the derivative of an exponential function $f(x) = a^x$, we can first calculate the derivative of the function $\ln f$.
 
 $\frac{d}{dx}\ln f(x) = \frac{1}{f(x)} \cdot \frac{d}{dx} f(x) = \frac{f'(x)}{f(x)}$
+
+$\frac{d}{dx}\ln a^x = \frac{\frac{d}{dx}a^x}{a^x}$
+
+$\frac{d}{dx}(x\ln a) = \frac{\frac{d}{dx}a^x}{a^x}$
+
+$\ln a = \frac{\frac{d}{dx}a^x}{a^x}$
+
+$\frac{d}{dx} a^x = \ln a \cdot a^x$
+
+Therefore, $M(a) = \ln a$.
+
+Example 1: calculate the derivative of the function $f(x) = x^x$. Such functions are called moving exponents.
+
+$\ln f(x) = \ln x^x = x \cdot \ln x$
+
+$\frac{d}{dx} \ln f(x) = \frac{d}{dx}(x \cdot \ln x) = 1 + \ln x$
+
+As $\frac{d}{dx} \ln f(x) = \frac{f'(x)}{f(x)}$, we can get
+
+$f'(x) = f(x) \cdot \frac{d}{dx} \ln f(x) = x^x \cdot (1 + \ln x)$
+
+Example 2: calculate $\lim_{n \to \infty} (1 + \frac{1}{n})^n$. 
+
+$\ln ((1+\frac{1}{n})^n) = n \cdot \ln (1+\frac{1}{n})$
+
+Suppose $\Delta x = \frac{1}{n}$, when $n \to \infty$, $\Delta x \to 0$. Then we can rewrite the above expression as
+
+$\lim_{n \to \infty} \ln((1+\frac{1}{n})^n) = \lim_{n \to \infty} n \cdot \ln(1+\frac{1}{n}) = \lim_{\Delta x \to 0} \frac{1}{\Delta x} \cdot \ln (1 + \Delta x)   = \lim_{\Delta x \to 0} \frac{1}{\Delta x} \cdot (\ln (1 + \Delta x) - \ln 1) = \lim_{\Delta x \to 0}\frac{\ln(1+\Delta x) - \ln 1}{\Delta x} = \frac{d}{dx}\ln x|_{x=1} = (\frac{1}{x})|_{x=1} = 1$
+
+Since $\lim_{n \to \infty}\ln((1+\frac{1}{n})^n) = 1$, we can deduce that
+
+$\lim_{n \to \infty} (1+\frac{1}{n})^n = e$
+
+The above formula is one of the numerical approach to calculate or approximate the value of $e$.
