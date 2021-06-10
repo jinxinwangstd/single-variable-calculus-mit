@@ -91,6 +91,66 @@ $0 = 2a \frac{da}{db} + 2b - 2\cos \theta (b\frac{da}{db}+a)$
 
 $\frac{da}{db} = \frac{2a\cos\theta - 2b}{2a - 2b\cos\theta} = \frac{a \cos \theta - b}{a - b \cos \theta}$
 
+1G-1 Calculate $y''$ for the following functions.
+
+a) $3x^2+2x+4\sqrt{x}$
+
+b) $\frac{x}{x+5}$
+
+c) $\frac{-5}{x+5}$
+
+d) $\frac{x^2+5x}{x+5}$
+
+Solution:
+
+a) $y' = \frac{d}{dx}(3x^2+2x+4\sqrt{x}) = 6x + 2 + \frac{2}{\sqrt{x}}$
+
+$y'' = \frac{d}{dx}(6x+2+\frac{2}{\sqrt{x}}) = 6 - \frac{1}{\sqrt{x^3}}$
+
+b) $y'=\frac{d}{dx}(\frac{x}{x+5}) = \frac{d}{dx}(1 + \frac{-5}{x+5}) = \frac{5}{(x+5)^2}$
+
+$y''=\frac{d}{dx}(\frac{5}{(x+5)^2}) = -\frac{10}{(x+5)^3}$
+
+c) $y'=\frac{d}{dx}(\frac{-5}{x+5}) = \frac{5}{(x+5)^2}$
+
+$y''=\frac{d}{dx}(\frac{5}{(x+5)^2}) = -\frac{10}{(x+5)^3}$
+
+d) $y' = \frac{d}{dx}(\frac{x^2+5x}{x+5}) = \frac{d}{dx}x = 1$
+
+$y'' = \frac{d}{dx}1 = 0$
+
+1G-2 Find all functions $f(x)$ whose third derivative $f'''(x)$ is identically zero. ("Identically" is math jargon for "always" or "for every value of x".)
+
+Solution: According to the problem description, we have
+
+$f'''(x) = 0$ always holds.
+
+Therefore, we can deduce that
+
+$f''(x) = a$, where $a$ is a constant.
+
+Hence, $f'(x) = ax+b$, where $a$ and $b$ are constants. So
+
+$f(x) = ax^2+bx+c$, where $a$, $b$, and $c$ are constants.
+
+1G-3 Calculate $y''$ using implicit differentiation and simplify as much as possible.
+
+$x^2a^2+y^2b^2=1$
+
+Solution: Apply $\frac{d}{dx}$ to both sides of the expression, then we get
+
+$2a^2x + 2b^2y\cdot\frac{dy}{dx} = 0$
+
+$\frac{dy}{dx}=-\frac{a^2x}{b^2y}$
+
+Apply $\frac{d}{dx}$ to both sides of the above expression, then we get
+
+$\frac{d^2y}{dx^2}= -\frac{a^2\cdot b^2y - a^2x \cdot b^2\frac{dy}{dx}}{b^4y^2}$
+
+Substitute $\frac{dy}{dx}$ with the corresponding expression, then we get
+
+$\frac{d^2y}{dx^2} = \frac{a^2b^2(x\cdot \frac{-a^2x}{b^2y} - y)}{b^4y^2} = -\frac{a^2b^2(a^2x^2+b^2y^2)}{b^4y^2} = -\frac{a^2b^2}{b^4y^2} = -\frac{a^2}{b^2y^2} = \frac{a^2}{a^2x^2 - 1}$
+
 1G-4 Find the formula for the nth derivative $y^{(n)}$ of $y = \frac{1}{x+1}$.
 
 Solution:
@@ -183,4 +243,14 @@ Since we just randomly pick the $t_1$, we know that at time $t_1 + \lambda$, the
 
 1H-2 If a solution containing a heavy concentration of hydrogen ions (i.e., a strong acid) is diluted with an equal volume of water, by approximately how much is its pH changed? (Express $(pH)_{diluted}$ in terms of $(pH)_{original}$.
 
-Solution:
+Solution: According to the problem description, after diluted with an equal volume of water, the concentration of hydrogen ions becomes half as before, i.e.
+
+$[H^+]_{diluted} = \frac{1}{2}[H^+]_{original}$
+
+The pH value is calculated by the formula $pH = -\lg[H^+]$. Therefore,
+
+$(pH)_{diluted} = -\lg[H^+]_{diluted} = -\lg(\frac{1}{2}\cdot[H^+]_{original}) = -\lg(\frac{1}{2}) + (-\lg[H^+]_{original}) = -\lg(\frac{1}{2}) + (pH)_{original}$
+
+$-\lg(\frac{1}{2}) \approx 0.3$
+
+Hence, the pH value goes up by approximately 0.3.
